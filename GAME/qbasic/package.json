@@ -1,0 +1,25 @@
+{
+    "name": "qbasic",
+    "displayName": "QBASIC",
+    "description": "IBM QBasic support ",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.50.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "qbasic",
+            "aliases": ["QBasic", "qbasic"],
+            "extensions": [".BAS",".BI",".MAK"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "qbasic",
+            "scopeName": "source.qbasic",
+            "path": "./syntaxes/qbasic.tmLanguage.json"
+        }]
+    }
+}
